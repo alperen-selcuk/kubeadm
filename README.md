@@ -49,7 +49,9 @@ apt-get install kubeadm=1.24.2-00 kubelet=1.24.2-00 kubectl=1.24.2-00 -y
 ### kubeadm ile upgrade
 
 apt-mark unhold kubeadm
+
 apt-get update && apt-get install -y kubeadm=1.25.2-00
+
 apt-mark hold kubeadm
  
 kubeadm upgrade plan
@@ -66,6 +68,7 @@ apt-get update && apt-get install -y kubelet=1.25.2-00 kubectl=1.25.2-00
 apt-mark hold kubelet kubectl
 
 sudo systemctl daemon-reload
+
 sudo systemctl restart kubelet
 
 kubectl uncordon master
