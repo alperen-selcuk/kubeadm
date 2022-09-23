@@ -5,10 +5,15 @@
 ### containerd
 
 sudo su -
+
 apt-get update
+
 apt-get install containerd -y
+
 mkdir -p /etc/containerd
+
 containerd config default /etc/containerd/config.toml
+
 
 sudo systemctl restart containerd
 sudo systemctl enable containerd
