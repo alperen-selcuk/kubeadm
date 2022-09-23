@@ -55,3 +55,4 @@ sudo systemctl daemon-reload
 sudo systemctl restart kubelet
 
 kubectl uncordon master
+
