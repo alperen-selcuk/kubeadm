@@ -21,6 +21,7 @@ sudo systemctl enable containerd
 ### sys
 
 sudo modprobe overlay
+
 sudo modprobe br_netfilter
 
 sudo nano /etc/sysctl.d/kubernetes.conf
