@@ -16,6 +16,7 @@ containerd config default /etc/containerd/config.toml
 
 
 sudo systemctl restart containerd
+
 sudo systemctl enable containerd
 
 ### sys
